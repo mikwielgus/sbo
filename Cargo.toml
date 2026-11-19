@@ -1,0 +1,26 @@
+# SPDX-FileCopyrightText: 2026 sbo contributors
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+[package]
+name = "sbo"
+version = "0.1.0"
+authors = ["Mikolaj Wielgus <wielgusmikolaj@gmail.com>"]
+description = "Small buffer optimization (SBO) for arbitrary collections."
+repository = "https://github.com/mikwielgus/sbo"
+documentation = "https://docs.rs/sbo"
+readme = "README.md"
+license = "MIT OR Apache=-2.0"
+keywords = ["sbo", "no_std"]
+categories = ["data-structures", "no-std", "rust-patterns"]
+edition = "2024"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[features]
+default = ["std"]
+std = []
+
+[dependencies]
+maplike = "0.17"
